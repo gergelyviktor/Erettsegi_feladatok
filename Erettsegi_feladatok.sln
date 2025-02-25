@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kektura", "..\Kektura\Kektu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helsinki", "..\Helsinki\Helsinki\Helsinki.csproj", "{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ötszáz", "Ötszáz", "{AA69566D-4BE5-4ED5-A067-6C74B2BD3639}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otszaz_LINQ", "Otszaz_LINQ\Otszaz_LINQ.csproj", "{F524C079-8973-40F0-A195-D93EE43191EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,17 @@ Global
 		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F524C079-8973-40F0-A195-D93EE43191EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F524C079-8973-40F0-A195-D93EE43191EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F524C079-8973-40F0-A195-D93EE43191EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F524C079-8973-40F0-A195-D93EE43191EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3A45370-4C39-4ECE-8A4E-EA55033234F2} = {AA69566D-4BE5-4ED5-A067-6C74B2BD3639}
+		{F524C079-8973-40F0-A195-D93EE43191EC} = {AA69566D-4BE5-4ED5-A067-6C74B2BD3639}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3249DD33-E32F-4936-8A41-698B51E1A1FA}
