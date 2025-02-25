@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Otszaz", "Otszaz\Otszaz.csproj", "{B3A45370-4C39-4ECE-8A4E-EA55033234F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kektura", "..\Kektura\Kektura\Kektura.csproj", "{E05A9E05-F24C-48C4-823F-8BB3E3CC2373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helsinki", "..\Helsinki\Helsinki\Helsinki.csproj", "{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B3A45370-4C39-4ECE-8A4E-EA55033234F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3A45370-4C39-4ECE-8A4E-EA55033234F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3A45370-4C39-4ECE-8A4E-EA55033234F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05A9E05-F24C-48C4-823F-8BB3E3CC2373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05A9E05-F24C-48C4-823F-8BB3E3CC2373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05A9E05-F24C-48C4-823F-8BB3E3CC2373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05A9E05-F24C-48C4-823F-8BB3E3CC2373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C69ADA08-E85D-49CC-BE7B-CE4F1023C315}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
