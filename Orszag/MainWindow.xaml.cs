@@ -26,7 +26,7 @@ namespace Orszagok {
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
-            var a = adatok.Where(x=>x.Orszagnev == txt1.Text).ToList();
+            var a = adatok.Where(x => x.Orszagnev == txt1.Text).ToList();
             if (a.Any()) {
                 // létezik-e az a-nak eleme
                 dtg1.ItemsSource = a;
@@ -34,6 +34,16 @@ namespace Orszagok {
             else {
                 MessageBox.Show("Nincs ilyen ország!");
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e) {
+            var a = adatok.OrderBy(x => x.Orszagnev).ToList();
+            dtg1.ItemsSource = a;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e) {
+            var a = adatok.Select(x => new { Ország = x.Orszagnev, Főváros = x.Fovaros.ToUpper() }).ToList();
+            dtg1.ItemsSource = a;
         }
     }
 }

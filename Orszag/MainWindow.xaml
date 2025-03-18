@@ -16,9 +16,9 @@
             <DataGrid x:Name="dtg1" Height="426" Margin="5"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Button Content="Feladat 1" Height="20" Margin="10" Click="Button_Click"/>
-            <Button Content="Feladat 2" Height="20" Margin="10"/>
-            <Button Content="Feladat 3" Height="20" Margin="10"/>
+            <Button Content="Megadott ország" Height="20" Margin="10" Click="Button_Click"/>
+            <Button Content="Mutasd az összeset" Height="20" Margin="10" Click="Button_Click_1"/>
+            <Button Content="Csak bizonyos mezők" Height="20" Margin="10" Click="Button_Click_2"/>
             <Button Content="Feladat 4" Height="20" Margin="10"/>
         </StackPanel>
         <StackPanel Grid.Column="2">
