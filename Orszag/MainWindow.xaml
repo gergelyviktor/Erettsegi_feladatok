@@ -19,13 +19,15 @@
             <Button Content="Megadott ország" Height="20" Margin="10" Click="Button_Click"/>
             <Button Content="Mutasd az összeset" Height="20" Margin="10" Click="Button_Click_1"/>
             <Button Content="Csak bizonyos mezők" Height="20" Margin="10" Click="Button_Click_2"/>
-            <Button Content="Feladat 4" Height="20" Margin="10"/>
+            <Button Content="Főváros népess páratlan" Height="20" Margin="10" Click="Button_Click_3"/>
+            <Button Content="Megszámlál" Height="20" Click="Button_Click_4"/>
         </StackPanel>
         <StackPanel Grid.Column="2">
             <TextBox x:Name="txt1" Height="20" Margin="10"/>
             <TextBox x:Name="txt2" Height="20" Margin="10"/>
             <TextBox x:Name="txt3" Height="20" Margin="10"/>
             <TextBox x:Name="txt4" Height="20" Margin="10"/>
+            <ComboBox x:Name="cbOrszagok" Width="120"/>
         </StackPanel>
     </Grid>
 </Window>
