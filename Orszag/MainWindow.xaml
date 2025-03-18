@@ -1,0 +1,31 @@
+﻿<Window x:Class="Orszagok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Orszagok"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <DataGrid x:Name="dtg1" Height="426" Margin="5"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <Button Content="Feladat 1" Height="20" Margin="10"/>
+            <Button Content="Feladat 2" Height="20" Margin="10"/>
+            <Button Content="Feladat 3" Height="20" Margin="10"/>
+            <Button Content="Feladat 4" Height="20" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBox x:Name="txt1" Height="20" Margin="10"/>
+            <TextBox x:Name="txt2" Height="20" Margin="10"/>
+            <TextBox x:Name="txt3" Height="20" Margin="10"/>
+            <TextBox x:Name="txt4" Height="20" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
