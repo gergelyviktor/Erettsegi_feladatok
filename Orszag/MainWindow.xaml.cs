@@ -23,6 +23,15 @@ namespace Orszagok {
                 adatok.Add(temp);
             }
             dtg1.ItemsSource = adatok;
+            // combobox tartalma egy rendezett halmaz lesz (distinct)
+            SortedSet<string> orszagok = new SortedSet<string>();
+            foreach (var item in adatok) {
+                orszagok.Add(item.Orszagnev);
+            }
+            orszagok.Add(" Minden látszik");
+            // a Minden látszik legyen látható alapértelmezetten
+            cbOrszagok.SelectedIndex = 0;
+            cbOrszagok.ItemsSource = orszagok;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e) {
@@ -69,7 +78,13 @@ namespace Orszagok {
             var a = adatok.Where(x => x.Orszagnev == "Magyarország").ToList();
             int terulet = a[0].Terulet;
             var kisebb = adatok.Count(x => x.Terulet < terulet);
-            MessageBox.Show(kisebb.ToString()+" kisebb népességű ország van");
+            MessageBox.Show(kisebb.ToString() + " kisebb népességű ország van");
+        }
+
+        private void cbOrszagok_SelectionChanged(object sender, SelectionChangedEventArgs e) {
+            var kivalasztott = cbOrszagok.SelectedItem.ToString();
+            var a = adatok.Where(x=>x.Orszagnev == kivalasztott || kivalasztott == " Minden látszik");
+            dtg1.ItemsSource = a;
         }
     }
 }

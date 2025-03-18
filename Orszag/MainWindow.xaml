@@ -27,7 +27,7 @@
             <TextBox x:Name="txt2" Height="20" Margin="10"/>
             <TextBox x:Name="txt3" Height="20" Margin="10"/>
             <TextBox x:Name="txt4" Height="20" Margin="10"/>
-            <ComboBox x:Name="cbOrszagok" Width="120"/>
+            <ComboBox x:Name="cbOrszagok" Width="120" SelectionChanged="cbOrszagok_SelectionChanged"/>
         </StackPanel>
     </Grid>
 </Window>
