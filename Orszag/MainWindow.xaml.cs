@@ -24,5 +24,16 @@ namespace Orszagok {
             }
             dtg1.ItemsSource = adatok;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e) {
+            var a = adatok.Where(x=>x.Orszagnev == txt1.Text).ToList();
+            if (a.Any()) {
+                // létezik-e az a-nak eleme
+                dtg1.ItemsSource = a;
+            }
+            else {
+                MessageBox.Show("Nincs ilyen ország!");
+            }
+        }
     }
 }
